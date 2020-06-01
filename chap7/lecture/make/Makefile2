@@ -1,0 +1,7 @@
+# := is for defining simply expanded variable, which
+# is expanded once and for all
+x := foo
+y := $(x) bar
+x := later
+
+all:;@echo "y is" $(y)
